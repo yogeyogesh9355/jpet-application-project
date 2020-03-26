@@ -54,43 +54,40 @@ formatter.match({
   "location": "Jpet_SignIn_and_CompareName_steps.launchapplication()"
 });
 formatter.result({
-  "duration": 6113368902,
+  "duration": 16098557404,
   "status": "passed"
 });
 formatter.match({
   "location": "Jpet_SignIn_and_CompareName_steps.click_on_signIn()"
 });
 formatter.result({
-  "duration": 383803531,
-  "status": "passed"
+  "duration": 1399833857,
+  "error_message": "org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath\u003d//*[@id\u003d\"MenuContent\"]/a[2]\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:25:48\u0027\nSystem info: host: \u0027DESKTOP-IKGN2NK\u0027, ip: \u0027192.168.43.117\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002713.0.2\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat com.Jpet.pages.Jpet_SignIn_and_CompareName_page.clicksignin(Jpet_SignIn_and_CompareName_page.java:51)\r\n\tat com.Jpet.steps.Jpet_SignIn_and_CompareName_steps.click_on_signIn(Jpet_SignIn_and_CompareName_steps.java:21)\r\n\tat ✽.When click on signin button(src/main/resources/Jpet_feature/Jpet_Application.feature:6)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "Jpet_SignIn_and_CompareName_steps.LaunchBrowser()"
 });
 formatter.result({
-  "duration": 6440539903,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "Jpet_SignIn_and_CompareName_steps.click_signIn()"
 });
 formatter.result({
-  "duration": 726853725,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "Jpet_SignIn_and_CompareName_steps.comparename()"
 });
 formatter.result({
-  "duration": 74970454,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "Jpet_SignIn_and_CompareName_steps.close()"
 });
 formatter.result({
-  "duration": 234326816,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
   "line": 13,
@@ -150,56 +147,56 @@ formatter.match({
   "location": "Jpet_PrintBill_and_MyOrdersTable_steps.launchapplication()"
 });
 formatter.result({
-  "duration": 4697281620,
+  "duration": 5200440752,
   "status": "passed"
 });
 formatter.match({
   "location": "Jpet_PrintBill_and_MyOrdersTable_steps.click_on_signIn()"
 });
 formatter.result({
-  "duration": 390464670,
+  "duration": 482116760,
   "status": "passed"
 });
 formatter.match({
   "location": "Jpet_PrintBill_and_MyOrdersTable_steps.LaunchBrowser()"
 });
 formatter.result({
-  "duration": 5343580699,
+  "duration": 6899323142,
   "status": "passed"
 });
 formatter.match({
   "location": "Jpet_PrintBill_and_MyOrdersTable_steps.click_signIn()"
 });
 formatter.result({
-  "duration": 753830875,
+  "duration": 841660956,
   "status": "passed"
 });
 formatter.match({
   "location": "Jpet_PrintBill_and_MyOrdersTable_steps.selectproduct()"
 });
 formatter.result({
-  "duration": 2189555614,
+  "duration": 2287406191,
   "status": "passed"
 });
 formatter.match({
   "location": "Jpet_PrintBill_and_MyOrdersTable_steps.applicationhomepage()"
 });
 formatter.result({
-  "duration": 442778617,
+  "duration": 523533231,
   "status": "passed"
 });
 formatter.match({
   "location": "Jpet_PrintBill_and_MyOrdersTable_steps.print_myorder_table()"
 });
 formatter.result({
-  "duration": 858189917,
+  "duration": 1052677385,
   "status": "passed"
 });
 formatter.match({
   "location": "Jpet_PrintBill_and_MyOrdersTable_steps.end()"
 });
 formatter.result({
-  "duration": 176307360,
+  "duration": 173870734,
   "status": "passed"
 });
 formatter.scenario({
@@ -250,42 +247,42 @@ formatter.match({
   "location": "Jpet_AddProducts_and_RemoveFromCart_steps.launchapplication()"
 });
 formatter.result({
-  "duration": 4693315677,
+  "duration": 4841507768,
   "status": "passed"
 });
 formatter.match({
   "location": "Jpet_AddProducts_and_RemoveFromCart_steps.select_catogory()"
 });
 formatter.result({
-  "duration": 364114156,
+  "duration": 409012329,
   "status": "passed"
 });
 formatter.match({
   "location": "Jpet_AddProducts_and_RemoveFromCart_steps.select_product()"
 });
 formatter.result({
-  "duration": 355117660,
+  "duration": 394688670,
   "status": "passed"
 });
 formatter.match({
   "location": "Jpet_AddProducts_and_RemoveFromCart_steps.addtocart()"
 });
 formatter.result({
-  "duration": 372795535,
+  "duration": 471411541,
   "status": "passed"
 });
 formatter.match({
   "location": "Jpet_AddProducts_and_RemoveFromCart_steps.signin()"
 });
 formatter.result({
-  "duration": 11179979777,
+  "duration": 11198276576,
   "status": "passed"
 });
 formatter.match({
   "location": "Jpet_AddProducts_and_RemoveFromCart_steps.exit()"
 });
 formatter.result({
-  "duration": 120403246,
+  "duration": 149830388,
   "status": "passed"
 });
 });
