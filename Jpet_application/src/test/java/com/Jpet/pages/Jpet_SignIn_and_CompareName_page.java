@@ -41,16 +41,17 @@ public class Jpet_SignIn_and_CompareName_page {
 	driver.manage().window().maximize(); 
 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	driver.get(url);
-
+// to handle exception
 } catch (WebDriverException e) {
 	System.out.println("Browser could not be launched");
 }
 	}
-	
+	//to click on sign in button
 	public void clicksignin() {
 	driver.findElement(By.xpath("//*[@id=\"MenuContent\"]/a[2]")).click();
 	
 	}
+	// proceed to sign in function
 	public void signin() throws IOException, InterruptedException {
 		
 			Jpet_exceldata ed = new Jpet_exceldata();	
@@ -63,10 +64,12 @@ public class Jpet_SignIn_and_CompareName_page {
 			Thread.sleep(5000);
 		}
 	}
+	// click on sign in button
 	public void clickonsignIn() {
 		driver.findElement(By.xpath("//*[@id=\"Catalog\"]/form/input")).click();
 		System.out.println("Sign in success");
 	}
+	//to compare user name with welcome board name
 	public void compare_name() throws InterruptedException {
 		 String s = driver.findElement(By.xpath("//*[@id=\"WelcomeContent\"]")).getText();
 		 String ss=s.substring(8,14);
@@ -75,6 +78,7 @@ public class Jpet_SignIn_and_CompareName_page {
 		 Assert.assertEquals(ss, sss);
 		System.out.println("Compare name passed");
 		}
+	//to close browser
 	public void quit() {
 		driver.close();
 	}

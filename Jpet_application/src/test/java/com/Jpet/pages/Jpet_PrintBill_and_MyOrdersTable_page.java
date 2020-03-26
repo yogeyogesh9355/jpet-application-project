@@ -40,14 +40,15 @@ public class Jpet_PrintBill_and_MyOrdersTable_page {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.get(url);
 
-	} catch (WebDriverException e) {
+	}// exception handling function
+			catch (WebDriverException e) {
 		System.out.println("Browser could not be launched");
 	}
 		}
-	
+	// to click sign button
 	public void clicksignin() {
 		driver.findElement(By.xpath("//*[@id=\"MenuContent\"]/a[2]")).click();
-	}
+	}// sign in function
 	public void signin() throws IOException, InterruptedException {
 		
 			Jpet_exceldata ed = new Jpet_exceldata();	
@@ -59,11 +60,11 @@ public class Jpet_PrintBill_and_MyOrdersTable_page {
 			driver.findElement(By.name("password")).sendKeys(ed.excel_password(i));
 			Thread.sleep(5000);
 		}
-	}
+	}// to click on sign in
 	public void clickonsignIn() {
 	driver.findElement(By.xpath("//*[@id=\"Catalog\"]/form/input")).click();
 	}
-	
+	// to select a product from product list
 	public void selectaproduct() {
 		driver.findElement(By.xpath("//*[@id=\"SidebarContent\"]/a[1]/img")).click();
 		driver.findElement(By.xpath("//*[@id=\"Catalog\"]/table/tbody/tr[2]/td[1]/a")).click();
@@ -72,6 +73,7 @@ public class Jpet_PrintBill_and_MyOrdersTable_page {
 		driver.findElement(By.xpath("//*[@id=\"Catalog\"]/form/input")).click();
 		driver.findElement(By.xpath("//*[@id=\"Catalog\"]/a")).click();
 	}
+	// to print the ordered bill
 		public void Printbill() {
 			
 						String s = driver.findElement(By.xpath("//*[@id=\"Catalog\"]/table")).getText();
@@ -79,7 +81,7 @@ public class Jpet_PrintBill_and_MyOrdersTable_page {
 						System.out.println("");
 						driver.findElement(By.xpath("//*[@id=\"BackLink\"]/a")).click();
 	}
-		
+		//to print my order table
 		public void print_Myordertable()
 		{
 			driver.findElement(By.xpath("//*[@id=\"MenuContent\"]/a[3]")).click();
@@ -87,7 +89,7 @@ public class Jpet_PrintBill_and_MyOrdersTable_page {
 			String s=driver.findElement(By.xpath("//*[@id=\"Content\"]/table/tbody")).getText();
 			System.out.println("");
 			System.out.println(s);
-			
+			// to close browser
 		}
 		public void quit() {
 			driver.close();
