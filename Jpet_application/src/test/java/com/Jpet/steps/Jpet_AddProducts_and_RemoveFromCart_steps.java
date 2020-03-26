@@ -32,7 +32,7 @@ public class Jpet_AddProducts_and_RemoveFromCart_steps {
 	@Then("^to check for remove from cart$")
 	public void signin() throws IOException, InterruptedException {
 		cart.removefromCart();
-		cart.takescreenshot2("C:\\Users\\Lenovo\\Desktop\\yogesh\\Jpet_application\\src\\test\\resources\\screenshot\\removefromcart.png");
+		cart.takescreenshot2("src/test/resources/screenshot/removefromcart.png");
 	}
 	@And("^close browser for remove from cart$")
 	public void exit() {

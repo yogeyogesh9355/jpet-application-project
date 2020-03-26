@@ -24,24 +24,24 @@ public class Jpet_SignIn_and_CompareName_page {
 		try {
 			//To launch firefox Browser
 	if (browser.equalsIgnoreCase("firefox")) {
-		System.setProperty("webdriver.gecko.driver","C:\\Users\\Lenovo\\Desktop\\yogesh\\Jpet_Application\\src\\test\\resources\\driver\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver","src/test/resources/driver/geckodriver.exe");
 		driver = new FirefoxDriver();
 	}
 			// To launch chrome Browser
 	else if (browser.equalsIgnoreCase("chrome")) {
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\Lenovo\\Desktop\\yogesh\\Jpet_application\\src\\test\\resources\\driver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","src/test/resources/driver/chromedriver.exe");
 		driver=new ChromeDriver();
 	}
 			// To launch InternetExplorer
 	else if (browser.equalsIgnoreCase("Internet Explore")) {
-			System.setProperty("webdriver.ie.driver","C:\\Users\\Lenovo\\Desktop\\yogesh\\Jpet_Application\\src\\test\\resources\\driver\\IEDriverServer.exe");
+			System.setProperty("webdriver.ie.driver","src/test/resources/driver/IEDriverServer.exe");
 		driver=new InternetExplorerDriver();  
 	}
 			//to maximize the window
 	driver.manage().window().maximize(); 
 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	driver.get(url);
-// to handle exception
+// Exception handling command
 } catch (WebDriverException e) {
 	System.out.println("Browser could not be launched");
 }

@@ -14,7 +14,7 @@ public class Jpet_exceldata {
 	//to get username from excel data
 	public  String excel_username(int i) throws IOException 
 	{	  
-		FileInputStream fil = new FileInputStream(new File("C:\\Users\\Lenovo\\Desktop\\Jpet_Register.xlsx"));
+		FileInputStream fil = new FileInputStream(new File("src/test/resources/test_data/jpet_test_data.xlsx"));
 		XSSFWorkbook workbook = new XSSFWorkbook(fil);
 		XSSFSheet sheet=workbook.getSheet("Sheet1");
 		XSSFRow row =sheet.getRow(i);
@@ -27,7 +27,7 @@ public class Jpet_exceldata {
 	// to get password from excel data
 	public  String excel_password(int i) throws IOException 
 	{ 
-		FileInputStream fil = new FileInputStream(new File("C:\\Users\\Lenovo\\Desktop\\Jpet_Register.xlsx"));
+		FileInputStream fil = new FileInputStream(new File("src/test/resources/test_data/jpet_test_data.xlsx"));
 		XSSFWorkbook workbook = new XSSFWorkbook(fil);
 		XSSFSheet sheet=workbook.getSheet("Sheet1");
 		XSSFRow row =sheet.getRow(i);
