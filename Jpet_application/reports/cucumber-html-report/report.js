@@ -54,42 +54,42 @@ formatter.match({
   "location": "Jpet_SignIn_and_CompareName_steps.launchapplication()"
 });
 formatter.result({
-  "duration": 6013297603,
+  "duration": 6113368902,
   "status": "passed"
 });
 formatter.match({
   "location": "Jpet_SignIn_and_CompareName_steps.click_on_signIn()"
 });
 formatter.result({
-  "duration": 400882018,
+  "duration": 383803531,
   "status": "passed"
 });
 formatter.match({
   "location": "Jpet_SignIn_and_CompareName_steps.LaunchBrowser()"
 });
 formatter.result({
-  "duration": 6517008831,
+  "duration": 6440539903,
   "status": "passed"
 });
 formatter.match({
   "location": "Jpet_SignIn_and_CompareName_steps.click_signIn()"
 });
 formatter.result({
-  "duration": 811261736,
+  "duration": 726853725,
   "status": "passed"
 });
 formatter.match({
   "location": "Jpet_SignIn_and_CompareName_steps.comparename()"
 });
 formatter.result({
-  "duration": 54197962,
+  "duration": 74970454,
   "status": "passed"
 });
 formatter.match({
   "location": "Jpet_SignIn_and_CompareName_steps.close()"
 });
 formatter.result({
-  "duration": 127007324,
+  "duration": 234326816,
   "status": "passed"
 });
 formatter.scenario({
@@ -150,56 +150,56 @@ formatter.match({
   "location": "Jpet_PrintBill_and_MyOrdersTable_steps.launchapplication()"
 });
 formatter.result({
-  "duration": 4741182524,
+  "duration": 4697281620,
   "status": "passed"
 });
 formatter.match({
   "location": "Jpet_PrintBill_and_MyOrdersTable_steps.click_on_signIn()"
 });
 formatter.result({
-  "duration": 534291911,
+  "duration": 390464670,
   "status": "passed"
 });
 formatter.match({
   "location": "Jpet_PrintBill_and_MyOrdersTable_steps.LaunchBrowser()"
 });
 formatter.result({
-  "duration": 5389186213,
+  "duration": 5343580699,
   "status": "passed"
 });
 formatter.match({
   "location": "Jpet_PrintBill_and_MyOrdersTable_steps.click_signIn()"
 });
 formatter.result({
-  "duration": 776631832,
+  "duration": 753830875,
   "status": "passed"
 });
 formatter.match({
   "location": "Jpet_PrintBill_and_MyOrdersTable_steps.selectproduct()"
 });
 formatter.result({
-  "duration": 3204164575,
+  "duration": 2189555614,
   "status": "passed"
 });
 formatter.match({
   "location": "Jpet_PrintBill_and_MyOrdersTable_steps.applicationhomepage()"
 });
 formatter.result({
-  "duration": 606692599,
+  "duration": 442778617,
   "status": "passed"
 });
 formatter.match({
   "location": "Jpet_PrintBill_and_MyOrdersTable_steps.print_myorder_table()"
 });
 formatter.result({
-  "duration": 1227141853,
+  "duration": 858189917,
   "status": "passed"
 });
 formatter.match({
   "location": "Jpet_PrintBill_and_MyOrdersTable_steps.end()"
 });
 formatter.result({
-  "duration": 170717000,
+  "duration": 176307360,
   "status": "passed"
 });
 formatter.scenario({
@@ -250,42 +250,42 @@ formatter.match({
   "location": "Jpet_AddProducts_and_RemoveFromCart_steps.launchapplication()"
 });
 formatter.result({
-  "duration": 16021396557,
+  "duration": 4693315677,
   "status": "passed"
 });
 formatter.match({
   "location": "Jpet_AddProducts_and_RemoveFromCart_steps.select_catogory()"
 });
 formatter.result({
-  "duration": 358162414,
+  "duration": 364114156,
   "status": "passed"
 });
 formatter.match({
   "location": "Jpet_AddProducts_and_RemoveFromCart_steps.select_product()"
 });
 formatter.result({
-  "duration": 429348902,
+  "duration": 355117660,
   "status": "passed"
 });
 formatter.match({
   "location": "Jpet_AddProducts_and_RemoveFromCart_steps.addtocart()"
 });
 formatter.result({
-  "duration": 680541384,
+  "duration": 372795535,
   "status": "passed"
 });
 formatter.match({
   "location": "Jpet_AddProducts_and_RemoveFromCart_steps.signin()"
 });
 formatter.result({
-  "duration": 11481017193,
+  "duration": 11179979777,
   "status": "passed"
 });
 formatter.match({
   "location": "Jpet_AddProducts_and_RemoveFromCart_steps.exit()"
 });
 formatter.result({
-  "duration": 139236720,
+  "duration": 120403246,
   "status": "passed"
 });
 });

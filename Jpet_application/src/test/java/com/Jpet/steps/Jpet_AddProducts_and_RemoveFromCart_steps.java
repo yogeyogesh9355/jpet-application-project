@@ -13,7 +13,7 @@ public class Jpet_AddProducts_and_RemoveFromCart_steps {
 	Jpet_AddProducts_and_RemoveFromCart_page cart = new Jpet_AddProducts_and_RemoveFromCart_page();
 	@Given("^launch application homepage for cart$")
 	public void launchapplication() {
-		cart.launchapplication();
+		cart.launchapplication("chrome","https://petstore.octoperf.com/actions/Catalog.action");
 	}
 	
 	@When("^select product category$")

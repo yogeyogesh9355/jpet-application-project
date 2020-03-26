@@ -5,29 +5,48 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 
 import com.excelutilities.Jpet_exceldata;
 
 public class Jpet_PrintBill_and_MyOrdersTable_page {
 	WebDriver driver;
-	WebElement Register;
-	public void launchapplication() {
-		
-	
-		// To launch Chrome browser
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Lenovo\\Desktop\\yogesh\\Jpet_application\\src\\test\\resources\\driver\\chromedriver.exe");
-	driver = new ChromeDriver();
-	driver.manage().window().maximize();
-	driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);	
-	//To open application homepage
-	driver.get("https://petstore.octoperf.com/actions/Catalog.action");	
+	WebElement Register;	
+	public void launchapplication(String browser,String url) {
+			// To launch Chrome browser
+			
+			try {
+				//To launch firefox Browser
+		if (browser.equalsIgnoreCase("firefox")) {
+			System.setProperty("webdriver.gecko.driver","C:\\Users\\Lenovo\\Desktop\\yogesh\\Jpet_Application\\src\\test\\resources\\driver\\geckodriver.exe");
+			driver = new FirefoxDriver();
+		}
+				// To launch chrome Browser
+		else if (browser.equalsIgnoreCase("chrome")) {
+			System.setProperty("webdriver.chrome.driver","C:\\Users\\Lenovo\\Desktop\\yogesh\\Jpet_application\\src\\test\\resources\\driver\\chromedriver.exe");
+			driver=new ChromeDriver();
+		}
+				// To launch InternetExplorer
+		else if (browser.equalsIgnoreCase("Internet Explore")) {
+				System.setProperty("webdriver.ie.driver","C:\\Users\\Lenovo\\Desktop\\yogesh\\Jpet_Application\\src\\test\\resources\\driver\\IEDriverServer.exe");
+			driver=new InternetExplorerDriver();  
+		}
+				//to maximize the window
+		driver.manage().window().maximize(); 
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.get(url);
+
+	} catch (WebDriverException e) {
+		System.out.println("Browser could not be launched");
 	}
+		}
 	
 	public void clicksignin() {
-		Register = driver.findElement(By.xpath("//*[@id=\"MenuContent\"]/a[2]"));
-		Register.click();
+		driver.findElement(By.xpath("//*[@id=\"MenuContent\"]/a[2]")).click();
 	}
 	public void signin() throws IOException, InterruptedException {
 		
@@ -42,8 +61,7 @@ public class Jpet_PrintBill_and_MyOrdersTable_page {
 		}
 	}
 	public void clickonsignIn() {
-		Register= driver.findElement(By.xpath("//*[@id=\"Catalog\"]/form/input"));
-		Register.click();
+	driver.findElement(By.xpath("//*[@id=\"Catalog\"]/form/input")).click();
 	}
 	
 	public void selectaproduct() {

@@ -13,7 +13,7 @@ public class Jpet_PrintBill_and_MyOrdersTable_steps {
 	Jpet_PrintBill_and_MyOrdersTable_page table = new Jpet_PrintBill_and_MyOrdersTable_page();
 	@Given("^launch application homepage for print table$")
 	public void launchapplication() {
-		table.launchapplication();
+		table.launchapplication("chrome","https://petstore.octoperf.com/actions/Catalog.action");
 	}
 		@When("^click on signin button to print talbe$")
 		public void click_on_signIn()

@@ -13,7 +13,7 @@ public class Jpet_SignIn_and_CompareName_steps {
 	Jpet_SignIn_and_CompareName_page signin = new Jpet_SignIn_and_CompareName_page();
 @Given("^launch application homepage$")
 public void launchapplication() {
-	signin.launchapplication();
+	signin.launchapplication("chrome","https://petstore.octoperf.com/actions/Catalog.action");
 }
 	@When("^click on signin button$")
 	public void click_on_signIn()
