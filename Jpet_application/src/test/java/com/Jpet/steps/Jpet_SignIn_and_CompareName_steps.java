@@ -31,8 +31,17 @@ public void launchapplication() {
 	}
 	@Then("^to check for compare name$")
 	public void comparename() throws InterruptedException {
-		
-		signin.compare_name();
+		String a=signin.compare_name();
+		String b="Yoge";
+		int c =a.compareTo(b);
+		if (c==0)
+		{
+			System.out.println("compare name success");
+		}
+		else
+		{
+			System.out.println("compare name fail");
+		}
 	}
 	@And("^close browser$")
 	public void close() {

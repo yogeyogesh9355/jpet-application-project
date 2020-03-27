@@ -70,13 +70,11 @@ public class Jpet_SignIn_and_CompareName_page {
 		System.out.println("Sign in success");
 	}
 	//to compare user name with welcome board name
-	public void compare_name() throws InterruptedException {
+	public String compare_name() throws InterruptedException {
 		 String s = driver.findElement(By.xpath("//*[@id=\"WelcomeContent\"]")).getText();
 		 String ss=s.substring(8,14);
-		 String sss="Yogesh";
-		 //boolean a = true;
-		 Assert.assertEquals(ss, sss);
-		System.out.println("Compare name passed");
+		 return ss;
+		 
 		}
 	//to close browser
 	public void quit() {

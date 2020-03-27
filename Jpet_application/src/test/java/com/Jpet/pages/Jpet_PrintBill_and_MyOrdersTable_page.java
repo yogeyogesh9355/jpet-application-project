@@ -1,9 +1,13 @@
 package com.Jpet.pages;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
@@ -73,12 +77,18 @@ public class Jpet_PrintBill_and_MyOrdersTable_page {
 		driver.findElement(By.xpath("//*[@id=\"Catalog\"]/a")).click();
 	}
 	// to print the ordered bill
-		public void Printbill() {
+		public void Printbill(String path) throws IOException, InterruptedException {
 			
 						String s = driver.findElement(By.xpath("//*[@id=\"Catalog\"]/table")).getText();
 						System.out.println(s+" ");
 						System.out.println("");
+							TakesScreenshot image=  ((TakesScreenshot)driver);
+							Thread.sleep(5000);
+							File source=image.getScreenshotAs(OutputType.FILE);
+							Thread.sleep(5000);
+							FileUtils.copyFile(source, new File(path));
 						driver.findElement(By.xpath("//*[@id=\"BackLink\"]/a")).click();
+						
 	}
 		//to print my order table
 		public void print_Myordertable()
@@ -90,6 +100,15 @@ public class Jpet_PrintBill_and_MyOrdersTable_page {
 			System.out.println(s);
 			// to close browser
 		}
+		// to take screenshot
+		public void takescreenshot1(String path) throws IOException, InterruptedException {
+			TakesScreenshot image=  ((TakesScreenshot)driver);
+			Thread.sleep(5000);
+			File source=image.getScreenshotAs(OutputType.FILE);
+			Thread.sleep(5000);
+			FileUtils.copyFile(source, new File(path));
+		}
+		
 		public void quit() {
 			driver.close();
 }

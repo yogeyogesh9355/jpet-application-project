@@ -35,14 +35,15 @@ public class Jpet_PrintBill_and_MyOrdersTable_steps {
 	     table.selectaproduct();
 		}
 		@Then("^to check for printbill$")
-		public void applicationhomepage() {
+		public void applicationhomepage() throws IOException, InterruptedException {
 			
-			 table.Printbill();
+			 table.Printbill("src/test/resources/screenshot/bill.png");
 		}
 		@Then("^To print myorders table$")
-		public void print_myorder_table () {
+		public void print_myorder_table () throws IOException, InterruptedException {
 			
 			table.print_Myordertable();
+			table.takescreenshot1("src/test/resources/screenshot/myorder.png");
 		}
 		@And("^close browser for print table$")
 		public void end() {

@@ -62,7 +62,7 @@ public class Jpet_AddProducts_and_RemoveFromCart_page {
 		driver.findElement(By.xpath("//*[@id=\"Cart\"]/form/table/tbody/tr[2]/td[8]/a")).click();
 }
 	// to take screenshot for remove from cart
-		public void takescreenshot2(String path) throws IOException, InterruptedException {
+		public void takescreenshot1(String path) throws IOException, InterruptedException {
 			TakesScreenshot image=  ((TakesScreenshot)driver);
 			Thread.sleep(5000);
 			File source=image.getScreenshotAs(OutputType.FILE);
